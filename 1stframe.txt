@@ -1,0 +1,7 @@
+def getFirstFrame(videofile):^M
+   ...:     vidcap = cv2.VideoCapture(videofile)^M
+   ...:     success, image = vidcap.read()^M
+   ...:     if success:^M
+   ...:         name=str(videofile)
+   ...:         name=name[:-4]
+   ...:         cv2.imwrite(name + '.png', image)
